@@ -31,7 +31,7 @@ sorted([5, 100, 234, 7, 2])
 sorted([5, 100, 234, 7, 2], reverse=True)
 # => [234, 100, 7, 5, 2]
 
-sorted([5, 100, 234, 7, 2], key=lambda x: x % 10) #sorts by last digit of each number
+sorted([5, 100, 234, 7, 2], key=lambda x: x % 10) #sorts by last digit of each number ( lambda is an anonymous function)
 # => [5, 7, 2, 100, 234]
 
 list_123 = [1, 2, 3]
