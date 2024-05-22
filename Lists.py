@@ -38,3 +38,10 @@ list_123 = [1, 2, 3]
 list_123.append(4)
 list_123
 # => [1, 2, 3, 4]
+
+
+# Check if an item exists in a list
+'z' in ['a', 'b', 'c']
+# => False
+'z' in ['a', 'b', 'c', 'z']
+# => True

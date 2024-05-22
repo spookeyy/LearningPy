@@ -15,3 +15,10 @@ for i in range(len(students)):
     print(students[i], "is at index ", i)
 
 print(newArray)
+
+# check if item is in liat
+
+if "jack" in students:
+    print("jack is in the list")
+else:
+    print("jack is not in the list")
