@@ -1,4 +1,4 @@
-# Sets   Dictionsaries start from line 35
+# Sets   Dictionaries start from line 35
 #It can be initiated with curly brackets or the set() class constructor
 #It is an unordered collection of unique elements
 
