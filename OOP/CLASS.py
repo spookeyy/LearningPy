@@ -12,6 +12,7 @@
 # example
 
 class Animal:
+    # constructor - init.
     def __init__(self, my_name, my_age):
         # attribute - instance variable
         self.name = my_name
@@ -20,7 +21,7 @@ class Animal:
     def printer(self):
         print(f"My name is {self.name} and I am {self.age} years old")
 
-    def age(self):
+    def age(self): # instance method
         print("I am 10 years old")
 
 
@@ -50,9 +51,11 @@ dog.printer()
 # example
 
 class Dog(Animal):
-    def __init__(self, my_name, my_age, my_breed):
+    def __init__(self, my_name, my_age, my_breed): 
         super().__init__(my_name, my_age) # super keyword is used to access the parent class
         self.breed = my_breed
 
-    def printer(self):
+    def printer(self): # overriding the method from parent class
         print(f"My name is {self.name} and I am {self.age} years old and I am a {self.breed}")
+
+
