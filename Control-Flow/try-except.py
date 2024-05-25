@@ -20,3 +20,9 @@ divide(10, 5)
 # Use of the finally keyword at the end of a try/except statement 
 # allows us to perform actions that we want to occur regardless of 
 # whether or not an exception has been thrown.
+
+def print_param(param):
+    print(param)
+
+string = print_param("hello")
+print(string) # => None
