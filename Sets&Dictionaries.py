@@ -75,3 +75,17 @@ my_dict.get("key2")
 my_dict = {"key": 1, "key": 2}
 my_dict.clear()
 print(my_dict)  # => {}    
+
+
+dog = "cuddly"
+
+dict_map = {
+    "hungry": "Refilling food bowl.",
+    "thirsty": "Refilling water bowl.",
+    "playful": "Playing tug-of-war.",
+    "cuddly": "Snuggling.",
+}
+
+# Remember that a dictionary's .get() method lets us set a default value!
+owner = dict_map.get(dog, "Reading newspaper.")
+print(owner)  # => "Snuggling."
