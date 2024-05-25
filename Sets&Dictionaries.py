@@ -33,6 +33,10 @@ s = {1, 2, 3}
 del s
 # print(s)  # => NameError: name 's' is not defined
 
+sentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+unique_consonants = {c.lower() for c in sentence if c not in "aeiou ,."}
+print(unique_consonants) 
+# => {'l', 'r', 'm', 's', 'd', 't', 'c', 'i', 'a', 'g', 'u', 'e', 'b', 'o', 'p', 'h'}
 
 ##########################################################3
 
