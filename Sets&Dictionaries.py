@@ -38,7 +38,7 @@ unique_consonants = {c.lower() for c in sentence if c not in "aeiou ,."}
 print(unique_consonants) 
 # => {'l', 'r', 'm', 's', 'd', 't', 'c', 'i', 'a', 'g', 'u', 'e', 'b', 'o', 'p', 'h'}
 
-##########################################################3
+##########################################################
 
 #DICTIONARIES
 # keys must be in string format
