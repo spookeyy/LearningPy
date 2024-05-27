@@ -44,3 +44,13 @@ class ShoppingCart:
         total = sum([item.price for item in self.shopping_cart()])
         total -= total* self.coupon / 100
         return total
+    
+
+
+class Pet:
+  def __init__ (self, name):
+    self.name = name
+
+rabbit = Pet("Jabby")
+rabbit.name = "Jabbyy"
+print(rabbit.name)
