@@ -36,7 +36,8 @@ sorted([5, 100, 234, 7, 2], key=lambda x: x % 10) #sorts by last digit of each n
 
 list_123 = [1, 2, 3]
 list_123.append(4)
-list_123
+
+print(list_123)
 # => [1, 2, 3, 4]
 
 
