@@ -52,5 +52,5 @@ class Pet:
     self.name = name
 
 rabbit = Pet("Jabby")
-rabbit.name = "Jabbyy"
+# rabbit.name = "Jabbyy"
 print(rabbit.name)
