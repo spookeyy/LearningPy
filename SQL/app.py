@@ -37,10 +37,30 @@ class User:
         CURSOR.execute(sql, (self.name, self.email, self.age))
         CONN.commit()
 
-    def update(self, name):
+    @classmethod
+    def update(cls, name, email, age, id):
         sql = "UPDATE users SET name=?, email=?, age=? WHERE id=?"
-        CURSOR.execute(sql, (self.name, self.email, self.age, name))
+        CURSOR.execute(sql, (name, email, age, id))
         CONN.commit()
+
+    @classmethod
+    def read(cls, id):
+        sql = "SELECT * FROM users WHERE id=?"
+        CURSOR.execute(sql, (id,))
+        return CURSOR.fetchone()
+    
+    @classmethod
+    def delete(cls, id):
+        sql = "DELETE FROM users WHERE id=?"
+        CURSOR.execute(sql, (id,))
+        CONN.commit()
+
+    @classmethod 
+    def get_all(cls):
+        sql = "SELECT * FROM users"
+        CURSOR.execute(sql)
+        return CURSOR.fetchall()
+
 
 print("Creating table")
 User.create_table()
@@ -53,8 +73,20 @@ user2 = User("Mike", "mike@example.com", 29)
 user2.create()
 print(user2.name + " created successfully")
 
-user1.name = "Wendy"
-user1.update(user1.name)
+
+User.update("Wendy", "wendy@example.com", 30, 2)
 print(user1.name + " updated successfully")
 
+# user1.delete(1)
+# print(user1.name + " deleted successfully")
+
+user2.delete(user2.id)
+print(user2.name + " deleted successfully")
+
+users = User.get_all()
+for user in users:
+    print(user)
+
+print("Dropping table")
+User.drop_table()
 CONN.close()
