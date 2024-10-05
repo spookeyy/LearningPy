@@ -46,3 +46,10 @@ print(list_123)
 # => False
 'z' in ['a', 'b', 'c', 'z']
 # => True
+
+
+# insert item at the last index
+list_abc = ['a', 'b', 'c']
+list_abc.insert(len(list_abc), 'd')
+list_abc
+# => ['a', 'b', 'c', 'd']
