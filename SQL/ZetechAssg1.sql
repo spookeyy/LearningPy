@@ -1,3 +1,7 @@
+-- command to initialize it:
+-- sqlite3 zetechsystem.db < ZetechAssg1.sql
+
+
 -- creating database
 -- CREATE DATABASE ZETECHSYSTEM;
 
