@@ -1,4 +1,4 @@
--- command to initialize it:
+-- run this command to initialize it:
 -- sqlite3 zetechsystem.db < ZetechAssg1.sql
 
 
